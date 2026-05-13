@@ -253,7 +253,11 @@ export default function Portfolio() {
         <motion.div initial={{ opacity: 0, scale: 0.92 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7, delay: 0.2 }} className="relative">
           <Card className="overflow-hidden shadow-2xl">
             <div className="p-8">
-              <div className="mx-auto flex h-40 w-40 items-center justify-center rounded-full bg-gradient-to-br from-cyan-300 via-blue-400 to-purple-500 text-5xl font-black text-white shadow-2xl">{profile.initials}</div>
+              <img
+                src="/profile.jpg"
+                 alt="Profile"
+                  className="mx-auto h-40 w-40 rounded-full object-cover border-4 border-cyan-300 shadow-2xl"
+                />
               <div className="mt-8 text-center">
                 <h3 className="text-2xl font-bold text-white">{profile.name}</h3>
                 <p className="mt-2 text-cyan-200">AI • Data • Cloud • DevOps</p>
